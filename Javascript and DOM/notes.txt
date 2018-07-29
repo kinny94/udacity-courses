@@ -1,3 +1,8 @@
 DOM - Document object model
 
 The document is an object, just liek the javascript object. This means that is has key/value pairs. Some of the values are just piece of data, while others are functions that provide some type of functionality.
+ 
+The first DOM method to talk about will be
+
+* document.getElementByID();
+- If we ran the code in the console, we wouldn't get anything, because we did not tell the id of any element. We need to pass the string to this method of the id of the element we want it to find.
