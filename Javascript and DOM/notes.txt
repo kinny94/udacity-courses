@@ -1,0 +1,3 @@
+DOM - Document object model
+
+The document is an object, just liek the javascript object. This means that is has key/value pairs. Some of the values are just piece of data, while others are functions that provide some type of functionality.
