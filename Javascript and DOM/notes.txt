@@ -16,4 +16,33 @@ The next two DOM methods that are useful for selecting multiple elements at once
 .getElementsByClassName returns an array-like data structure of elements, but the list that is returned is not array.
 
 The Node interface. It works in the following orer on the webpage.
-Tag -> Tokens -> Nodes -> DOM
+Characters -> Tag -> Tokens -> Nodes -> DOM
+
+Node , with a capital N is a simply a blueprint thatb contains all the information about all the properties and methods for real nodes.
+interface = blueprint
+properties = data
+methods = functionality
+
+Node is an interface from which a number of DOM API objects types inherit. It allows those types to be treated similatly for eg. inheriting the same set of methods. or being tested in the same way.
+
+Element Interface - Just tlike the node interface, the element interface is a blueprint for creating elements. Element is the most general base class from which all objects in a Document inherit. It only has methods and properties common to all kinds of elements.
+for eg. The HTMLelement class is the base interface for HTML elements and SVGElement is the base interface for all SVG elements. It inherits properties from oits parent interface which is the Node interface.
+
+In the console, which inspecting in chrome, "$0" refers to the highlighted element.
+
+# The Query Selector Method 
+we can use .qyerySelector() method to search elments just like we do with CSS. We use the .querySelector method and pass it a string that's just a CSS Selector.
+for eg. 
+document.qyerySelector('#header'); //Search by id
+document.qyerySelector('.header');  //search by classname
+document.qyerySelector('header');   //search by tagname
+
+querySelector returns a single element.
+
+# The querySelectorAll method
+The .querySelectorAll() return all the elements with that particular tag or class or it.
+document.qyerySelectorAll('.header');
+document.qyerySelector('header');
+Returns a list of all the elements but its not a array list, it is a special list called the node list of the node class. So to map over it, yoiu need to use forEach method of the node class. ( Not supported by all browsers. ).
+
+
