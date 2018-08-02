@@ -6,3 +6,14 @@ The first DOM method to talk about will be
 
 * document.getElementByID();
 - If we ran the code in the console, we wouldn't get anything, because we did not tell the id of any element. We need to pass the string to this method of the id of the element we want it to find.
+
+* Selecting multiple elements at once.
+The next two DOM methods that are useful for selecting multiple elements at once are:-
+    - getElementsByClassName()
+    - getElementsByTagName()
+
+* don't forget to miss out the extra 's' in their name as compare to getElementByID.
+.getElementsByClassName returns an array-like data structure of elements, but the list that is returned is not array.
+
+The Node interface. It works in the following orer on the webpage.
+Tag -> Tokens -> Nodes -> DOM
