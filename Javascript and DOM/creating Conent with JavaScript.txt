@@ -1,0 +1,46 @@
+The Elements Inner HTML
+Every elements inherits properties and methods from the element interface. This means every element has an .innerHTML property. We can use this property to:-
+* get an element's HTML content
+* set an element's HTML content
+The .innerHTML property returns a string which is called the DOMString.
+
+An Element's Text content.
+The .textContent property will
+* set the content of an element and all its descendants.
+* returns the text content of an element and all its descendants.
+
+An Elements's text content version 2
+The .textContent Property, the .innerTextproperty can be used to get/set element's text content, but there are some differences.
+
+.textContent sets/gets the text content of an elment. all the text, regardless of CSS properties.
+.innerText, on the other hand, is a little thicker , it returns only what is visible.
+
+Adding new content to the page. 
+
+The CreateElement property.
+The createElement is the property of the document object which allows us to create new elements.
+You can use the .appenndChild method to add to the element to the page. 
+.appendChild() needs an element. It must be called on an existing element. 
+The appendChild method will move the element from its current position to the new one.
+
+Creating text nodes.    
+We can create new text nodes using the method .createTextNode() method.     
+Insereting HTML in other locations.
+
+The .insertAdjacentHTML()method has to be called with two arguments:-
+    - The location of the HTML 
+    - the HTML text that is going to be inserted.
+
+The first argumenbt allows us to put the text in four different locations
+* beforebegin * afterbegin * beforeend * afterend
+
+Remove Content 
+Removing a child 
+we can use .removeChild() method to remove a child. This method requires
+    - a parent element
+    - the child element that will be removed
+The drawback of this method is that it requires access to the parent function. 
+
+There is another method that is cxapable of doing that and it is .remove()
+
+Style the content of the page.
